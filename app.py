@@ -39,7 +39,7 @@ def doar():
     
     with sqlite3.connect("database.db") as conn:
         conn.execute(f"""
-        INSERT INTO LIVROS (titulo, categoria, autor, imagem_url)
+        INSERT INTO LIVROS (titulo, categoria, autor, link_Da_Imagem)
         VALUES ("{titulo}", "{categoria}", "{autor}", "{link_Da_Imagem}")
         """)
         conn.commit()
